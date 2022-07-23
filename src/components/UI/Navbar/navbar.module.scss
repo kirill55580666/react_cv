@@ -1,0 +1,33 @@
+@import "../../../utils/variables";
+
+.navbar {
+  color: $color;
+  width: 100%;
+  height: $size;
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 calc(#{$size} * 2);
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  //justify-content: center;
+  //flex: 0 0 500px;
+  a {
+    color: $color;
+    margin: 0 50px;
+    text-decoration: none;
+    &:visited {
+      color: $color;
+    }
+    &:focus {
+      color: $color;
+    }
+  }
+}

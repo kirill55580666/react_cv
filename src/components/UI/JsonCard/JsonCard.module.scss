@@ -1,0 +1,39 @@
+@mixin font($fname, $fstyle, $fweight, $furl) {
+  @font-face {
+    font-family: $fname;
+    font-style: $fstyle;
+    font-weight: $fweight;
+    src: url($furl) format('woff2');
+  }
+}
+
+@include font('JetBrainsMono', normal, 400, './fonts/JetBrainsMonoRegular.woff2');
+@include font('JetBrainsMono', normal, 500, './fonts/JetBrainsMonoMedium.woff2');
+@include font('JetBrainsMono', normal, 600, './fonts/JetBrainsMonoSemiBold.woff2');
+
+.card {
+  //position: relative;
+  //top: 50%;
+  //left: 10%;
+  background-color: #2a2a32;
+  border-radius: 10px;
+  max-width: 650px;
+  max-height: 2000px;
+  padding: 25px;
+  color: #fff;
+  font-family: JetBrainsMono, sans-serif;
+  font-weight: 600;
+  pre {
+    font-family: JetBrainsMono, sans-serif;
+    font-weight: 600;
+    line-height: 25px;
+  }
+}
+
+.variable {
+  color: #E5C07B;
+}
+
+.const {
+  color: #C678DD;
+}
