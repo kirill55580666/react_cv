@@ -1,6 +1,6 @@
 import Main from "../pages/Main/Main";
 import {FC} from "react";
-import Projects from "../pages/Projects";
+import Projects from "../pages/Projects/Projects";
 import Contacts from "../pages/Contacts";
 
 interface route {
