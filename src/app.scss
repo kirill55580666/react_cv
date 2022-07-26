@@ -1,7 +1,21 @@
+@mixin font($fname, $fstyle, $fweight, $furl) {
+  @font-face {
+    font-family: $fname;
+    font-style: $fstyle;
+    font-weight: $fweight;
+    src: url($furl) format('woff2');
+  }
+}
+
+@include font('JetBrainsMono', normal, 400, './fonts/JetBrainsMonoRegular.woff2');
+@include font('JetBrainsMono', normal, 500, './fonts/JetBrainsMonoMedium.woff2');
+@include font('JetBrainsMono', normal, 600, './fonts/JetBrainsMonoSemiBold.woff2');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: JetBrainsMono, sans-serif;
   //overflow-x: visible;
 }
 

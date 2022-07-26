@@ -1,23 +1,27 @@
 @import "../../../utils/variables";
 
 .navbar {
+  background-color: #1B1B1B;
   color: $color;
   width: 100%;
-  height: $size;
+  height: calc(#{$size} * 0.8);
   position: absolute;
   z-index: 999;
-  top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
   display: flex;
   justify-content: space-between;
-  padding: 0 calc(#{$size} * 2.5);
+  padding: 0 50px;
   align-items: center;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .title {
   //padding-left: 80px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .links {

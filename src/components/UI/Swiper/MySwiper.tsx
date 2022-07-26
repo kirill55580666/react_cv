@@ -47,9 +47,13 @@ const MySwiper: FC<ISwiperSlides> = ({slides}) => {
             {slides.map((slide) =>
                 <SwiperSlide key={slide.src} className={styles.swiper__slide}>
                     <div className={styles.title}>{slide.title}</div>
-                    <a className={`${styles.www} ${styles.icon}`} href={slide.src} target="_blank" rel="noreferrer">
-                        <img src={www} alt="ссылка"/>
-                    </a>
+                    {slide.src ?
+                        <a className={`${styles.www} ${styles.icon}`} href={slide.src} target="_blank" rel="noreferrer">
+                            <img src={www} alt="ссылка"/>
+                        </a>
+                        : ""
+                    }
+
                     <a className={`${styles.github} ${styles.icon}`} href="https://github.com/kirill55580666/disk_storage" target="_blank" rel="noreferrer">
                         <img src={github} alt="ссылка"/>
                     </a>

@@ -42,6 +42,7 @@ const JsonCard: FC = () => {
                 "TypeScript",
                 "Express",
                 "Redux",
+                "...и другое"
             ]
         },
         {

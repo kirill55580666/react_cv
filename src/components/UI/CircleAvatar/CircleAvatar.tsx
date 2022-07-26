@@ -1,4 +1,4 @@
-import React, {FC, useState} from 'react';
+import React, {FC} from 'react';
 import styles from './CircleAvatar.module.scss'
 import avatar from './assets/shelly.jpg'
 import jsPNG from './assets/js.png'
@@ -12,15 +12,16 @@ import CircleElement from "./Circle/CircleElement/CircleElement";
 import Circle from "./Circle/Circle";
 import angleCoordinates from "./Circle/angleCoordinates";
 
-const CircleAvatar: FC = () => {
+interface ICircleAvatar {
+    sizeImage: number;
+    smallSize: number;
+    bigSize: number;
+    sizeElement: number;
+}
+
+const CircleAvatar: FC<ICircleAvatar> = ({bigSize, sizeImage, sizeElement, smallSize}) => {
 
     const alt = 'Фото скилла'
-    // eslint-disable-next-line
-    const [smallSize, setSmallSize] = useState(700)
-    // eslint-disable-next-line
-    const [bigSize, setBigSize] = useState(1000)
-    // eslint-disable-next-line
-    const [sizeElement, setSizeElement] = useState(70)
 
     // возможно стоить вынести в useState, но тогда ухудшится читаемость кода
     const X: Array<number> = [];
@@ -36,7 +37,7 @@ const CircleAvatar: FC = () => {
 
     return (
         <div className={styles.wrapper}>
-            <img className={styles.avatar} src={avatar} alt="моё фото"/>
+            <img style={{height: sizeImage}} className={styles.avatar} src={avatar} alt="моё фото"/>
             <Circle
                 className={styles.circle_to_center}
                 size={smallSize}
