@@ -24,10 +24,29 @@
   font-family: JetBrainsMono, sans-serif;
   font-weight: 500;
   font-size: 18px;
+  @media (min-width: 1400px) and (max-width: 1823px) {
+    font-size: 16px;
+    padding: 35px 150px 35px 30px;
+  }
+  @media (min-width: 1200px) and (max-width: 1399px) {
+    font-size: 14px;
+    padding: 30px 130px 30px 15px;
+  }
+  @media (max-width: 1199px) {
+    padding: 10px;
+    font-size: 12px;
+    display: none;
+  }
   pre {
     font-family: JetBrainsMono, sans-serif;
     font-weight: 600;
     line-height: 25px;
+    @media (min-width: 1200px) and (max-width: 1399px) {
+      line-height: 20px;
+    }
+    @media (max-width: 1199px) {
+
+    }
   }
 }
 

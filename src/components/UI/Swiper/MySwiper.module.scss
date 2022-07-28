@@ -2,9 +2,13 @@
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
+  padding-top: 21px !important;
   .swiper-pagination {
     position: relative;
     bottom: -50px;
+  }
+  @media (max-height: 576px) and (orientation: landscape){
+    width: 50%;
   }
 }
 
@@ -14,6 +18,14 @@
   //background-color: #003bb8;
   width: 500px !important;
   height: 500px !important;
+  @media (max-width: 576px) and (orientation: portrait){
+    width: 100% !important;
+    height: 100vw !important;
+  }
+  @media (max-height: 576px) and (orientation: landscape){
+    width: calc(100vh - 180px) !important;
+    height: calc(100vh - 180px) !important;
+  }
   img {
     display: block;
     width: 100%;
@@ -31,7 +43,9 @@
   //color: #1B1B1B;
   color: #000;
   font-size: 25px;
-
+  @media (max-height: 576px) and (orientation: landscape) {
+    font-size: 12px;
+  }
 }
 
 .icon {
@@ -39,6 +53,10 @@
   bottom: 5px;
   width: 50px;
   height: 50px;
+  @media (max-height: 576px) and (orientation: landscape){
+    width: 20px;
+    height: 20px;
+  }
   img {
     width: 100%;
     height: 100%;
@@ -53,3 +71,4 @@
 .github {
   right: 5px;
 }
+

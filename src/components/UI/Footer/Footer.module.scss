@@ -15,6 +15,15 @@
   padding: 0 50px;
   align-items: center;
   font-size: 16px;
+  @media (min-width: 1400px) and (max-width: 1823px) {
+    font-size: 14px;
+  }
+  @media (min-width: 1200px) and (max-width: 1399px) {
+    font-size: 12px;
+  }
+  @media (max-width: 1199px) {
+    bottom: 0;
+  }
 }
 
 .title {
@@ -22,6 +31,9 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  @media (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .links {
@@ -29,7 +41,18 @@
   letter-spacing: .1em;
   //justify-content: center;
   //flex: 0 0 500px;
+  @media (max-width: 1199px) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
   a {
+    width: 45px;
+    height: 45px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
     color: $color;
     margin: 0 50px;
     text-decoration: none;
@@ -42,6 +65,16 @@
     }
     &:hover {
       color: $yellow;
+    }
+    @media (max-width: 1199px) {
+      margin: 0 30px;
+      width: 30px;
+      height: 30px;
+    }
+    @media (max-width: 576px) {
+      margin: 0 15px;
+      width: 25px;
+      height: 25px;
     }
   }
 }

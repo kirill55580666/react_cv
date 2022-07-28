@@ -28,18 +28,19 @@
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/CircleAvatar/CircleAvatar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/CircleAvatar/CircleAvatar.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/CircleAvatar/CircleAvatar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/CircleAvatar/CircleAvatar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Footer/Footer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Footer/Footer.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Footer/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Footer/assets/github.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/JsonCard/JsonCard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/JsonCard/JsonCard.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/JsonCard/JsonCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/JsonCard/JsonCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Navbar/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/MyGradientBackground/MyGradientBackground.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/MyGradientBackground/MyGradientBackground.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Navbar/navbar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Navbar/navbar.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Swiper/MySwiper.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Swiper/MySwiper.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Swiper/MySwiper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Swiper/MySwiper.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Swiper/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Swiper/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Main/Main.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main/Main.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Main/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main/Main.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Projects/Projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Projects/Projects.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/react-app-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/react-app-env.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,22 +58,23 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/UI/Footer/assets" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="ts.external.directory.path" value="C:\webstormSSD_projects\react_cv\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\webstormSSD_projects\react_cv\src\components\UI\JsonCard\fonts" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\webstormSSD_projects\react_cv\src\pages\Projects" />
       <recent name="C:\webstormSSD_projects\react_cv\src\pages\Main" />
       <recent name="C:\webstormSSD_projects\react_cv\src\components\UI\CircleAvatar\Circle\CircleElement" />
       <recent name="C:\webstormSSD_projects\react_cv\src\components\UI\CircleAvatar\Circle" />
       <recent name="C:\webstormSSD_projects\react_cv\src\components\UI" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\webstormSSD_projects\react_cv\src\components\UI\Footer\assets" />
+      <recent name="C:\webstormSSD_projects\react_cv\src\components\UI\JsonCard\fonts" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -92,7 +94,10 @@
       <workItem from="1658581389522" duration="18000" />
       <workItem from="1658582251772" duration="427000" />
       <workItem from="1658582696514" duration="12585000" />
-      <workItem from="1658848812041" duration="7090000" />
+      <workItem from="1658848812041" duration="8264000" />
+      <workItem from="1658901934633" duration="12088000" />
+      <workItem from="1658987112763" duration="1670000" />
+      <workItem from="1659021407180" duration="8126000" />
     </task>
     <servers />
   </component>
@@ -112,18 +117,18 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1162" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1658307131128">
+    <state x="1162" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1658909639876">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1162" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1658307131128" />
-    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1658070328105">
+    <state x="1162" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1658909639876" />
+    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1658910321105">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1658070328105" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1658853179019">
+    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1658910321105" />
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1658857156642">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1658853179019" />
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1658857156642" />
     <state x="817" y="298" key="SettingsEditor" timestamp="1658849827890">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -1,11 +1,13 @@
-import React, {FC, useState} from 'react';
+import React, {FC, useContext, useEffect} from 'react';
 import CircleAvatar from "../../components/UI/CircleAvatar/CircleAvatar";
 import styles from './Main.module.scss'
 import JsonCard from "../../components/UI/JsonCard/JsonCard";
 import {useMediaQuery} from "react-responsive";
+import {Context} from "../../index";
+import { observer } from 'mobx-react-lite';
 
 
-const Main: FC = () => {
+const Main: FC = observer(() => {
 
     //     xs: 0,
     //     sm: 576px,
@@ -15,43 +17,88 @@ const Main: FC = () => {
     //     xxl: 1400px
     //     xxxl: 1824px специальное 'свое' значение
 
-    const [sizeImage, setSizeImage] = useState(450)
-    const [smallSize, setSmallSize] = useState(650)
-    const [bigSize, setBigSize] = useState(900)
-    const [sizeElement, setSizeElement] = useState(70)
+    const {store} = useContext(Context);
+
+    const setXXXL = () => {
+        store.setSizeImage(450);
+        store.setSmallSize(650);
+        store.setBigSize(900);
+        store.setSizeElement(70);
+    }
+    const setXXL = () => {
+        store.setSizeImage(400);
+        store.setSmallSize(600);
+        store.setBigSize(800);
+        store.setSizeElement(60);
+    }
+    const setXL = () => {
+        store.setSizeImage(300);
+        store.setSmallSize(450);
+        store.setBigSize(650);
+        store.setSizeElement(60);
+    }
+    const setLessXL = () => {
+        store.setSizeImage(150);
+        store.setSmallSize(200);
+        store.setBigSize(300);
+        store.setSizeElement(20);
+    }
 
     const handleXXXL = (matches: boolean) => {
         if(matches === true) {
-            setSizeImage(450);
-            setSmallSize(650);
-            setBigSize(900);
-            setSizeElement(70);
+            setXXXL();
         }
     }
     const handleXXL = (matches: boolean) => {
         if(matches === true) {
-            setSizeImage(400);
-            setSmallSize(600);
-            setBigSize(800);
-            setSizeElement(60);
+            setXXL();
+        }
+    }
+    const handleXL = (matches: boolean) => {
+        if(matches === true) {
+            setXL();
+        }
+    }
+    const handleLessXL = (matches: boolean) => {
+        if(matches === true) {
+            setLessXL();
         }
     }
 
     const isXXXL = useMediaQuery(
-        { query: '(min-width: 1824px)' }, undefined, handleXXXL)
+         {minWidth: 1824}, undefined, handleXXXL)
     const isXXL = useMediaQuery(
-        { query: '(min-width: 1400px)' }, undefined, handleXXL)
+        { minWidth: 1400, maxWidth: 1823 }, undefined, handleXXL)
+    const isXL = useMediaQuery(
+        { minWidth: 1200, maxWidth: 1399}, undefined, handleXL)
+    const isLessXL = useMediaQuery(
+        { maxWidth: 1200}, undefined, handleLessXL)
+
+    useEffect(() => {
+        if (isXXXL) {
+            setXXXL();
+        }
+        if (isXXL) {
+            setXXL();
+        }
+        if(isXL) {
+            setXL();
+        }
+        if(isLessXL) {
+            setLessXL();
+        }
+    },[])
 
     return (
-        <>
+        <div className={styles.wrapper}>
             <div className={styles.wrapperSkills}>
                 <JsonCard/>
             </div>
             <div className={styles.wrapperAvatar }>
-                <CircleAvatar sizeImage={sizeImage} smallSize={smallSize} bigSize={bigSize} sizeElement={sizeElement}/>
+                <CircleAvatar sizeImage={store.sizeImage} smallSize={store.smallSize} bigSize={store.bigSize} sizeElement={store.sizeElement}/>
             </div>
-        </>
+        </div>
     );
-};
+});
 
 export default Main;

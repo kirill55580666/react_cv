@@ -18,9 +18,10 @@ export interface ISwiperSlide {
     github?: string;
     title?: string;
     image?: any;
+    titleColor?: any;
 }
 
-interface ISwiperSlides{
+interface ISwiperSlides {
     slides: ISwiperSlide[];
 }
 
@@ -46,7 +47,7 @@ const MySwiper: FC<ISwiperSlides> = ({slides}) => {
 
             {slides.map((slide) =>
                 <SwiperSlide key={slide.src} className={styles.swiper__slide}>
-                    <div className={styles.title}>{slide.title}</div>
+                    <div className={styles.title} style={slide.titleColor ? {color: slide.titleColor} : {color: '#000'}}>{slide.title}</div>
                     {slide.src ?
                         <a className={`${styles.www} ${styles.icon}`} href={slide.src} target="_blank" rel="noreferrer">
                             <img src={www} alt="ссылка"/>
@@ -54,7 +55,8 @@ const MySwiper: FC<ISwiperSlides> = ({slides}) => {
                         : ""
                     }
 
-                    <a className={`${styles.github} ${styles.icon}`} href="https://github.com/kirill55580666/disk_storage" target="_blank" rel="noreferrer">
+                    <a className={`${styles.github} ${styles.icon}`}
+                       href="https://github.com/kirill55580666/disk_storage" target="_blank" rel="noreferrer">
                         <img src={github} alt="ссылка"/>
                     </a>
                     <img src={slide.image} alt=''/>

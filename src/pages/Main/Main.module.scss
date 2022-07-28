@@ -1,12 +1,29 @@
+.wrapper {
+  @media (max-width: 1199px) {
+    //height: 200vh;
+  }
+}
+
 .wrapperAvatar {
   position: absolute;
   z-index: 100;
   right: 12%;
   top: 40%;
+  @media (max-width: 1199px) {
+    left: 50%;
+    top: calc(50% - 64px);
+    bottom: 10%;
+  }
 }
 
 .wrapperSkills{
   position: absolute;
   left: 10%;
   top: 25%;
+  @media (max-width: 1199px) {
+    top: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10%;
+  }
 }
