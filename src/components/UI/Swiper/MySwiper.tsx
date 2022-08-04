@@ -1,8 +1,9 @@
 import React, {FC} from 'react';
 import {Swiper, SwiperSlide} from "swiper/react";
 import styles from './MySwiper.module.scss'
-import www from './assets/www.png'
-import github from './assets/github.png'
+import www from './assets/www.svg'
+//import github from './assets/github.png'
+import github from './assets/github_white.svg'
 //import githubBlue from './assets/github_blue.svg'
 import './index.css'
 
@@ -47,7 +48,7 @@ const MySwiper: FC<ISwiperSlides> = ({slides}) => {
 
             {slides.map((slide) =>
                 <SwiperSlide key={slide.src} className={styles.swiper__slide}>
-                    <div className={styles.title} style={slide.titleColor ? {color: slide.titleColor} : {color: '#000'}}>{slide.title}</div>
+                    <div className={styles.title} style={slide.titleColor ? {color: slide.titleColor} : {color: '#F9F4F4'}}>{slide.title}</div>
                     {slide.src ?
                         <a className={`${styles.www} ${styles.icon}`} href={slide.src} target="_blank" rel="noreferrer">
                             <img src={www} alt="ссылка"/>

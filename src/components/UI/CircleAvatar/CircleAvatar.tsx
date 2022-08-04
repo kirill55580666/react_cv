@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 import styles from './CircleAvatar.module.scss'
-import avatar from './assets/shelly.jpg'
+import avatar from './assets/me.jpg'
 import jsPNG from './assets/js.png'
 import reactPNG from './assets/react.png'
 import nodePNG from './assets/nodejs.png'
