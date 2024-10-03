@@ -2,7 +2,7 @@ import React, {FC} from 'react';
 import styles from './CircleAvatar.module.scss'
 import avatar from './assets/me.jpg'
 import jsPNG from './assets/js.png'
-import reactPNG from './assets/react.png'
+import vuePNG from './assets/vue.png'
 import nodePNG from './assets/nodejs.png'
 import typescriptPNG from './assets/typescript.png'
 import expressPNG from './assets/express.svg'
@@ -55,7 +55,7 @@ const CircleAvatar: FC<ICircleAvatar> = ({bigSize, sizeImage, sizeElement, small
                 />
                 <CircleElement
                     animationName='circle2'
-                    src={reactPNG}
+                    src={vuePNG}
                     size={sizeElement}
                     parentSize={smallSize}
                     alt={alt}

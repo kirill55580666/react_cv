@@ -20,6 +20,9 @@
   position: absolute;
   left: 10%;
   top: 25%;
+  @media (max-width: 1300px) {
+    top: 15%;
+  }
   @media (max-width: 1199px) {
     top: auto;
     left: 50%;

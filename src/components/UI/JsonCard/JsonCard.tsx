@@ -24,24 +24,34 @@ const JsonCard: FC = () => {
         },
         {
             name: "возраст",
-            value: "2 + 2 = 22"
+            value: "2 + 4 = 24"
         },
         {
             name: "должность",
-            value: "Fullstack React — разработчик"
+            value: "Team Lead Vue — разработчик"
         },
         {
             name: "опыт",
-            value: "6 месяцев"
+            value: "3 года"
         },
         {
             name: "стек",
             value: [
-                "React",
-                "NodeJS",
                 "TypeScript",
-                "Express",
+                "Vue 3",
+                "Pinia",
+                "WebSockets",
+            ]
+        },
+        {
+            name: "знания",
+            value: [
+                "FSD",
+                "React",
                 "Redux",
+                "NodeJS",
+                "Express",
+                "NestJS",
                 "...и другое"
             ]
         },

@@ -57,7 +57,7 @@ const MySwiper: FC<ISwiperSlides> = ({slides}) => {
                     }
 
                     <a className={`${styles.github} ${styles.icon}`}
-                       href="https://github.com/kirill55580666/disk_storage" target="_blank" rel="noreferrer">
+                       href={slide.github} target="_blank" rel="noreferrer">
                         <img src={github} alt="ссылка"/>
                     </a>
                     <img src={slide.image} alt=''/>
